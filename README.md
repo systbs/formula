@@ -52,9 +52,9 @@ Root Diameter-Gear :                     36.500000      36.568774
 Center Distance:                         67.000000      67.000000       67.000000
 ```
 
-## Calculations of Internal Gears
+## Calculations of Spur Gears (Profile Shifting)
 ```
-gcc -o internal internal.c -lm 
+gcc -o spur spur.c -lm 
 Usage: ./spur -m 3.000000 -a 0.349067 -zp 12.000000 -zg 24.000000 -xp 0.600000 -xg 0.360000
         -m      Module
         -a      Pressure Angle
@@ -65,7 +65,7 @@ Usage: ./spur -m 3.000000 -a 0.349067 -zp 12.000000 -zg 24.000000 -xp 0.600000 -
         
  Output:
  
-Usage: ./internal -m 3.000000 -a 0.349067 -zp 12.000000 -zg 24.000000 -xp 0.600000 -xg 0.360000
+Usage: ./spur -m 3.000000 -a 0.349067 -zp 12.000000 -zg 24.000000 -xp 0.600000 -xg 0.360000
         -m      Module
         -a      Pressure Angle
         -zp     Number of teeth-Pinion
