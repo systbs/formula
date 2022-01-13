@@ -7,6 +7,8 @@ Gear Formula - Gear Worm
 
 
 # How to use 
+
+## Calculations of Worm Gears
 ```
 gcc -o worm worm.c -lm 
 Usage: ./worm -zw 2.000000 -zg 30.000000 -mx 3.000000 -an 0.349067 -dw 44.000000
@@ -49,7 +51,7 @@ Root Diameter-Gear :                     36.500000      36.568774
 Center Distance:                         67.000000      67.000000       67.000000
 ```
 
-# Calculations of Spur Gears
+## Calculations of Spur Gears
 ```
 gcc -o spur spur.c -lm 
 Usage: ./spur -m 3.000000 -a 0.349067 -zp 12.000000 -zg 24.000000 -xp 0.600000 -xg 0.360000
