@@ -1,7 +1,7 @@
 # formula
 Gear Formula - Gear Worm 
 
-# Worm Gear Mesh Geometry, Elements of Metric Gear Technology (Cont.)
+## Worm Gear Mesh Geometry, Elements of Metric Gear Technology (Cont.)
   [Worm Gear Mesh Geometry-Document](https://www.sdp-si.com/resources/elements-of-metric-gear-technology/page5.php)
 
 
