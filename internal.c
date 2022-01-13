@@ -96,7 +96,7 @@ int main(int argc, char *argv[])
 		}
 	}
 
-	printf("Usage: ./spur -m %f -a %f -zp %f -zg %f -xp %f -xg %f\n", m, a, zp, zg, xp, xg);
+	printf("Usage: ./internal -m %f -a %f -zp %f -zg %f -xp %f -xg %f\n", m, a, zp, zg, xp, xg);
 	printf("\t-m \tModule\n");
 	printf("\t-a \tPressure Angle\n");
 	printf("\t-zp \tNumber of teeth-Pinion\n");
