@@ -1,7 +1,7 @@
 # formula
 Gear Formula - Gear Worm 
 
-## Worm Gear Mesh Geometry, Elements of Metric Gear Technology (Cont.)
+## Elements of Metric Gear Technology (Cont.)
  - [Worm Gear Mesh Geometry-Document](https://www.sdp-si.com/resources/elements-of-metric-gear-technology/page5.php)
  - [Calculations of Internal Gears and The Fundamentals of Helical Gears, Elements of Metric Gear Technology (Cont.)](https://www.sdp-si.com/resources/elements-of-metric-gear-technology/page3.php)
  - [Gear Types and Axial Arrangements; Details of Involute Gearing, Elements of Metric Gear Technology (Cont.)](https://www.sdp-si.com/resources/elements-of-metric-gear-technology/page2.php#Section4)
