@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
 		if (!isnum(argv[i + 1]))
 		{
 			printf("%s must be a number.\n", argv[i]);
-			printf("Usage: ./formula -zw %f -zg %f -mx %f -an %f -dw %f -cps %s -clr %f\n", zw, zg, mx, an, d, cps, cclr);
+			printf("Usage: ./worm -zw %f -zg %f -mx %f -an %f -dw %f -cps %s -clr %f\n", zw, zg, mx, an, d, cps, cclr);
 			printf("-zw \tNo. of Threads\n");
 			printf("-zg \tNo. of Teeth\n");
 			printf("-mx \tModule\n");
@@ -100,7 +100,7 @@ int main(int argc, char *argv[])
 		}
 	}
 
-	printf("Usage: ./formula -zw %f -zg %f -mx %f -an %f -dw %f\n", zw, zg, mx, an, d);
+	printf("Usage: ./worm -zw %f -zg %f -mx %f -an %f -dw %f\n", zw, zg, mx, an, d);
 	printf("\t-zw \tNo. of Threads\n");
 	printf("\t-zg \tNo. of Teeth\n");
 	printf("\t-mx \tModule\n");
