@@ -1,5 +1,5 @@
 # formula
-Gear Formula
+Gear Formula - Gear Worm
 
 # How to use 
 ```
