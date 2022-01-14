@@ -10,18 +10,29 @@ Gear Formula - Gear Worm
 # How to use 
 
 ## Calculations of Worm Gears
-```
 gcc -o worm worm.c -lm 
+```
 Usage: ./worm -zw 2.000000 -zg 30.000000 -mx 3.000000 -an 0.349067 -dw 44.000000
         -zw     No. of Threads
         -zg     No. of Teeth
         -mx     Module
         -an     Normal Pressure Angle
         -dw     Diameter of Worm
-        -xg     Coefficient of Profile Shift
+        -xg     Coefficient of Profile Shift     
         -clr    Coefficient of Clearance
+        -ft     Load (kgf)
+        -n      Revolution Per Minuts (rpm)      
+        -zm     Lubrication Factor Zm
+        -zl     Lubricant Factor, ZL
+        -zr     Surface Roughness Factor, ZR     
+        -kc     Contact Factor, Kc
+        -ks     Starting Factor, Ks
+        -kh     Time Factor, Kh
+        -bzf    Basic Zone Factor
+        -sc     Allowable Stress Factor, Sc lim  
 
 
+Kv 0.508249 Zm 1.000000 Kn 0.358904 Z 1.564000   
 Diameter Factor :                       14.666667
 Lead-Worm:                              18.849600
 Lead Angle :                            7.765148
@@ -59,6 +70,10 @@ Chordal Thickness - Worm :              4.669188        4.626372
 Chordal Thickness - Gear :              4.667170        4.624372
 Chordal Addendum - Worm :               3.002303        2.974752
 Chordal Addendum - Gear :               3.059441        3.031386
+
+----------------------- Force --------------------
+Nominal tangential force on worm gear's pitch circle (kgf) 45.000000 < 80.157684
+Nominal torque of worm gear (kg * m) 2.025000 < 3.607096
 ```
 
 ## Calculations of Spur Gears
