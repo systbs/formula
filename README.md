@@ -147,25 +147,25 @@ Module:                                 3.000000
 Number of teeth:                        16.000000       24.000000
 Pressure Angle:                         20.000000
 Coefficient of Profile Shift:           0.000000        0.500000
-Involute function:                      0.024004
-Working Pressure Angle:                 23.000000
-Center Distance Increment Factor:       0.416899
-Center Distance:                        61.250696
+Involute function:                      0.060401
+Working Pressure Angle:                 31.000000
+Center Distance Increment Factor:       0.385109
+Center Distance:                        13.155328
 Pitch Diameter:                         48.000000       72.000000
 Base Diameter:                          45.105232       67.657849
-Working Pitch Diameter:                 49.000557       73.500835
-Addendum:                               4.250696        2.750696
-Whole Depth:                            6.500696
-Dedendum:                               2.250000        3.750000
+Working Pitch Diameter:                 52.621311       78.931966
+Addendum:                               3.000000        1.500000
+Whole Depth:                            6.750000
+Dedendum:                               3.750000        5.250000
 Working Depth:                          6.000000
-Outside Diameter:                       56.501392       66.498608
-Root Diameter:                          43.500000       79.500000
+Outside Diameter:                       54.000000       69.000000
+Root Diameter:                          40.500000       82.500000
 Top Clearance:                          0.750000
 Circular Pitch:                         9.424800
-Pitch Prependicular to Tooth:           8.675571
-Base Pitch:                             8.675571
+Pitch Prependicular to Tooth:           8.078624
+Base Pitch:                             8.078624
 Tooth Thickness at Standard pitch Diameter:     4.712400
-Min No of Teeth for Undercutting:       13.100023
+Min No of Teeth for Undercutting:       7.539621
 ```
 
 ## Support Us
