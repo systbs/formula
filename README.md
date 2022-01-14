@@ -118,6 +118,7 @@ Addendum:                               4.800000        3.000000
 Whole Depth:                            6.750000
 Outside Diameter:                       45.600000
 Root Diameter:                          32.100000
+Contact Ratio:                          0.877843
 ```
 
 ## Internal/External Gear Calculations
