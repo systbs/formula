@@ -111,7 +111,7 @@ int main(int argc, char *argv[])
 	printf("Coefficient of Profile Shift: \t\t%f\t%f\n", xe, xi);
 
 	// Involute function
-	double invaw = 2 * tan(a) * ((xe + xi) / (ze + zi)) + tan(a) - a;
+	double invaw = 2 * tan(a) * ((xi + xe) / (zi - ze)) + tan(a) - a;
 
 	printf("Involute function: \t\t\t%f\n", invaw);
 
@@ -121,12 +121,12 @@ int main(int argc, char *argv[])
 	printf("Working Pressure Angle: \t\t%f\n", aw * 180 / PI);
 
 	// Center Distance Increment Factor
-	double y = ((zi + ze) / 2) * ((cos(a) / cos(aw)) - 1);
+	double y = ((zi - ze) / 2) * ((cos(a) / cos(aw)) - 1);
 
 	printf("Center Distance Increment Factor: \t%f\n", y);
 
 	// Center Distance
-	double ax = (((zi + ze) / 2) + y) * m;
+	double ax = (((zi - ze) / 2) + y) * m;
 
 	printf("Center Distance: \t\t\t%f\n", ax);
 
@@ -149,13 +149,13 @@ int main(int argc, char *argv[])
 	printf("Working Pitch Diameter: \t\t%f\t%f\n", dwe, dwi);
 
 	// Addendum
-	double hae = (1 + y - xe) * m;
-	double hai = (1 + y - xi) * m;
+	double hae = (1 + xe) * m;
+	double hai = (1 - xi) * m;
 
 	printf("Addendum: \t\t\t\t%f\t%f\n", hae, hai);
 
 	// Whole Depth
-	double h = (2.25 + y - (xe + xi)) * m;
+	double h = 2.25 * m;
 
 	printf("Whole Depth: \t\t\t\t%f\n", h);
 
@@ -208,6 +208,9 @@ int main(int argc, char *argv[])
 	printf("Tooth Thickness at Standard pitch Diameter: \t%f\n", Tsid);
 
 	// Contact Ratio
+	//double mp = (sqrt(abs((dti / 2) - (dbi / 2))) + sqrt(abs((dte / 2) - (dbe / 2))) - ax * sin(aw)) / (m * PI * cos(aw));
+
+	//printf("Contact Ratio: \t\t\t\t%f\n", mp);
 
 	// Backlash
 
