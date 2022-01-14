@@ -34,7 +34,7 @@ double an = 20 * PI / 180;
 double d = 44;
 
 // Coefficient of Profile Shift
-double cps = 0;
+double xg = 0;
 
 // Coefficient of Clearance
 double cclr = 0.25;
@@ -48,13 +48,13 @@ int main(int argc, char *argv[])
 		if (!isnum(argv[i + 1]))
 		{
 			printf("%s must be a number.\n", argv[i]);
-			printf("Usage: ./worm -zw %f -zg %f -mx %f -an %f -dw %f -cps %s -clr %f\n", zw, zg, mx, an, d, cps, cclr);
+			printf("Usage: ./formula -zw %f -zg %f -mx %f -an %f -dw %f -xg %s -clr %f\n", zw, zg, mx, an, d, xg, cclr);
 			printf("-zw \tNo. of Threads\n");
 			printf("-zg \tNo. of Teeth\n");
 			printf("-mx \tModule\n");
 			printf("-an \tNormal Pressure Angle\n");
 			printf("-dw \tDiameter of Worm\n");
-			printf("-cps \tCoefficient of Profile Shift\n");
+			printf("-xg \tCoefficient of Profile Shift\n");
 			printf("-clr \tCoefficient of Clearance\n");
 		}
 
@@ -106,7 +106,7 @@ int main(int argc, char *argv[])
 	printf("\t-mx \tModule\n");
 	printf("\t-an \tNormal Pressure Angle\n");
 	printf("\t-dw \tDiameter of Worm\n");
-	printf("\t-cps \tCoefficient of Profile Shift\n");
+	printf("\t-xg \tCoefficient of Profile Shift\n");
 	printf("\t-clr \tCoefficient of Clearance\n\n\n");
 
 	// Lead angle
@@ -172,11 +172,11 @@ int main(int argc, char *argv[])
 	// Axial Surface
 
 	// Center distance
-	double cax = ((dw + dg) / 2) + (cps * mx);
+	double cax = ((dw + dg) / 2) + (xg * mx);
 	// Addendum Worm
 	double adwx = 1 * mx;
 	// Deddendum Gear
-	double adgx = (1 + cps) * mx;
+	double adgx = (1 + xg) * mx;
 	// Whole Depth
 	double wdx = 2.25 * mx;
 	// Outside Diameter Worm
@@ -194,10 +194,10 @@ int main(int argc, char *argv[])
 
 	// Normal Surface
 	// Center distance
-	double can = ((dw + dg) / 2) + (cps * mn);
+	double can = ((dw + dg) / 2) + (xg * mn);
 	double dgn = zg * mn / cos(g);
 	double adwn = mn;
-	double adgn = (1 + cps) * mn;
+	double adgn = (1 + xg) * mn;
 	double wdn = 2.25 * mn;
 	double odwn = dw + (2 * adwn);
 	double odgn = dg + (2 * adgn) + mn;
@@ -208,10 +208,10 @@ int main(int argc, char *argv[])
 
 	// Radial Surface
 	// Center distance
-	double cat = ((dw + dg) / 2) + (cps * mt);
+	double cat = ((dw + dg) / 2) + (xg * mt);
 	double dgt = zg * mt * tan(g);
 	double adwt = mt;
-	double adgt = (1 + cps) * mt;
+	double adgt = (1 + xg) * mt;
 	double wdt = 2.25 * mt;
 	double odwt = dw + (2 * adwt);
 	double odgt = dg + (2 * adgt) + mt;
@@ -220,13 +220,42 @@ int main(int argc, char *argv[])
 	double rdwt = odwt - (2 * wdt);
 	double rdgt = tdt - (2 * wdt);
 
+	// Thickness
+	// Axial Circular Tooth Thickness
+	double sxw = PI * mx / 2;
+	double sxg = (PI / 2 + 2 * xg * tan(ax)) * mx;
+	// No of Teeth in an equivalent spur gear
+	double zxg = zg / ((cos(3 * g) + 3 * cos(g)) / 4);
+	// Half of tooth angle at pich circle
+	double txg = (90 / zxg) + ((360 * xg * tan(ax)) / (PI * zxg));
+	// Chordal Thickness
+	double sjwx = sxw * cos(g);
+	double sjgx = zxg * mx * cos(g) * sin(txg);
+	// Chordal Addendum
+	double hjwx = adwx + (pow(sxw * sin(g), 2) / (4 * dw));
+	double hjgx = adgx + ((zxg * mx * cos(g) / 2) * (1 - cos(txg)));
+
+	// Normal Circular Tooth Thickness
+	double snw = PI * mn / 2;
+	double sng = (PI / 2 + 2 * xg * tan(an)) * mn;
+	// No of Teeth in an equivalent spur gear
+	double zng = zg / ((cos(3 * g) + 3 * cos(g)) / 4);
+	// Half of tooth angle at pich circle
+	double tng = (90 / zng) + ((360 * xg * tan(an)) / (PI * zng));
+	// Chordal Thickness
+	double sjwn = snw * cos(g);
+	double sjgn = zng * mn * cos(g) * sin(tng);
+	// Chordal Addendum
+	double hjwn = adwn + (pow(snw * sin(g), 2) / (4 * dw));
+	double hjgn = adgn + ((zng * mn * cos(g) / 2) * (1 - cos(tng)));
+
 	printf("Diameter Factor : \t\t\t%f\n", Q);
 	printf("Lead-Worm: \t\t\t\t%f\n", Lw);
 	printf("Lead Angle : \t\t\t\t%f\n", g * 180 / PI);
 	printf("Length of worm with teeth : \t\t%f\n", b);
 	printf("Working blank width of worm gear : \t%f\n", be);
 	printf("Coefficient of Clearance : \t\t%f\n", cclr);
-	printf("Coefficient of Profile Shift : \t\t%f\n", cps);
+	printf("Coefficient of Profile Shift : \t\t%f\n", xg);
 
 	printf("\n\t\t\t\t\t Axial \t\t Normal \t Radial\n ----------------------------------------\n");
 
@@ -249,4 +278,16 @@ int main(int argc, char *argv[])
 	printf("Root Diameter-Worm : \t\t\t %f\t%f\n", rdwx, rdwn);
 	printf("Root Diameter-Gear : \t\t\t %f\t%f\n", rdgx, rdgn);
 	printf("Center Distance: \t\t\t %f\t%f\t%f\n", cax, can, cat);
+	printf("\n----------------------- Thickness --------------------\n");
+	printf("Circular Tooth Thickness-Worm : \t%f\t%f\n", sxw, snw);
+	printf("Circular Tooth Thickness-Gear : \t%f\t%f\n", sxg, sng);
+
+	printf("No of Teeth in an equivalent spur gear: %f\t%f\n", zxg, zng);
+	printf("Half of tooth angle at pich circle : \t%f\t%f\n", txg, tng);
+
+	printf("Chordal Thickness - Worm : \t\t%f\t%f\n", sjwx, sjwn);
+	printf("Chordal Thickness - Gear : \t\t%f\t%f\n", sjgx, sjgn);
+
+	printf("Chordal Addendum - Worm : \t\t%f\t%f\n", hjwx, hjwn);
+	printf("Chordal Addendum - Gear : \t\t%f\t%f\n", hjgx, hjgn);
 }
