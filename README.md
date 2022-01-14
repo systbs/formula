@@ -204,7 +204,7 @@ Circular Pitch:                         9.424800
 Pitch Prependicular to Tooth:           8.671548
 Base Pitch:                             8.671548
 Tooth Thickness at Standard pitch Diameter:     4.712400
-Contact Ratio:                          -5.006620
+Contact Ratio:                          1.486783
 Min No of Teeth for Undercutting:       13.032967
 ```
 
