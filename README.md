@@ -133,11 +133,11 @@ Usage: ./external -m 3.000000 -a 0.349067 -ze 16.000000 -zi 24.000000 -xe 0.0000
         -xi     Coefficient of Profile Shift-Internal
 
 
---------------------------               External        Internal
+--------------------------               External        Internal 
 Module:                                 3.000000
-Number of teeth:                        16.000000       24.000000
+Number of teeth:                        16.000000       24.000000 
 Pressure Angle:                         20.000000
-Coefficient of Profile Shift:           0.000000        0.500000
+Coefficient of Profile Shift:           0.000000        0.500000  
 Involute function:                      0.060401
 Working Pressure Angle:                 31.000000
 Center Distance Increment Factor:       0.385109
@@ -156,6 +156,7 @@ Circular Pitch:                         9.424800
 Pitch Prependicular to Tooth:           8.078624
 Base Pitch:                             8.078624
 Tooth Thickness at Standard pitch Diameter:     4.712400
+Contact Ratio:                          3.205840
 Min No of Teeth for Undercutting:       7.539621
 ```
 
