@@ -194,6 +194,23 @@ Usage: ./helix -mn 3.000000 -an 0.349067 -zp 12.000000 -zg 60.000000 -xnp 0.0980
         -zg     Number of teeth-Gear
         -xnp    Coefficient of Profile Shift-Pinion
         -xng    Coefficient of Profile Shift-Gear
+        -vp     Poisson's Ratio Pinion
+        -vg     Poisson's Ratio Gear
+        -ep     Young's Modulus Pinion
+        -eg     Young's Modulus Gear
+        -zb     Helix Angle Factor, Z╬▓
+        -khl    Life Factor, KHL
+        -zl     Lubricant Factor, ZL
+        -zr     Surface Roughness Factor, ZR
+        -zv     Sliding Speed Factor, ZV
+        -zw     Hardness Ratio Factor, ZW
+        -khx    Dimension Factor, KHX
+        -khb    Tooth Flank Load Distribution Factor, KH ╬▓
+        -kv     Dynamic Load Factor, KV
+        -ko     Overload Factor
+        -sh     Safety Factor For Pitting
+        -sigma  Hertz Stress
+        -ft     Tangential force
 
 
 --------------------------                       PINION          GEAR
@@ -229,6 +246,10 @@ No of Teeth in an equivalent spur gear: 18.475248       92.376239
 Half of tooth angle at pich circle :    5.092821        0.974277
 Chordal Thickness :                     4.920127        4.712173
 Chordal Addendum :                      3.355122        2.971479
+
+----------------------- Force --------------------
+Hertz Stress 1117.833993
+Tangential force 871.742250
 ```
 
 ## Support Us
