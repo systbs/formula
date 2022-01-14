@@ -214,7 +214,7 @@ int main(int argc, char *argv[])
 	printf("Tooth Thickness at Standard pitch Diameter: \t%f\n", Tsid);
 
 	// Contact Ratio
-	double mp = (sqrt(abs((dtg / 2) - (dbg / 2))) + sqrt(abs((dtp / 2) - (dbp / 2))) - ax * sin(awt)) / (mn * PI * cos(awt));
+	double mp = (sqrt(abs(pow(dtg / 2, 2) - pow(dbg / 2, 2))) + sqrt(abs(pow(dtp / 2, 2) - pow(dbp / 2, 2))) - ax * sin(awt)) / (mn * PI * cos(at));
 
 	printf("Contact Ratio: \t\t\t\t%f\n", mp);
 
