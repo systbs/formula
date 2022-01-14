@@ -101,5 +101,34 @@ Contact Ratio:                          -2.372302
 Min No of Teeth for Undercutting:       10.349517
  ```
 
+# Spur Gear & Rack
+gcc -o rack rack.c -lm
+```
+Usage: ./rack -m 3.000000 -a 0.349067 -z 12.000000 -x 0.600000 -H 32.000000 -aw 0.349067
+        -m      Module
+        -a      Pressure Angle
+        -z      Number of teeth
+        -H      Height of Pitch Line
+        -x      Coefficient of Profile Shift
+        -aw     Working Pressure Angle
+
+
+---------------------                   Spur Gear       Rack
+Module:                                 3.000000
+Pressure Angle:                         0.349067
+Number of Teeth:                        12.000000
+Coefficient of Profile Shift:           0.600000
+Height of Pitch Line:                   32.000000
+Working Pressure Angle:                 0.349067
+Center Distance:                        51.800000
+Pitch Diameter:                         36.000000
+Base Diameter:                          33.828924
+Working Pitch Diameter:                 36.000000
+Addendum:                               4.800000        3.000000
+Whole Depth:                            6.750000
+Outside Diameter:                       45.600000
+Root Diameter:                          32.100000
+```
+
 ## Support Us
 BTC    bc1qy8zfvyymhtfh7t2ykuaf3ev6h3nq3r2zn64jv7
