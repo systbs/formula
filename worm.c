@@ -227,7 +227,7 @@ int main(int argc, char *argv[])
 	// No of Teeth in an equivalent spur gear
 	double zxg = zg / ((cos(3 * g) + 3 * cos(g)) / 4);
 	// Half of tooth angle at pich circle
-	double txg = (90 / zxg) + ((360 * xg * tan(ax)) / (PI * zxg));
+	double txg = ((90 / zxg) + ((360 * xg * tan(ax)) / (PI * zxg))) * PI / 180;
 	// Chordal Thickness
 	double sjwx = sxw * cos(g);
 	double sjgx = zxg * mx * cos(g) * sin(txg);
@@ -241,7 +241,7 @@ int main(int argc, char *argv[])
 	// No of Teeth in an equivalent spur gear
 	double zng = zg / ((cos(3 * g) + 3 * cos(g)) / 4);
 	// Half of tooth angle at pich circle
-	double tng = (90 / zng) + ((360 * xg * tan(an)) / (PI * zng));
+	double tng = ((90 / zng) + ((360 * xg * tan(an)) / (PI * zng))) * PI / 180;
 	// Chordal Thickness
 	double sjwn = snw * cos(g);
 	double sjgn = zng * mn * cos(g) * sin(tng);
@@ -283,7 +283,7 @@ int main(int argc, char *argv[])
 	printf("Circular Tooth Thickness-Gear : \t%f\t%f\n", sxg, sng);
 
 	printf("No of Teeth in an equivalent spur gear: %f\t%f\n", zxg, zng);
-	printf("Half of tooth angle at pich circle : \t%f\t%f\n", txg, tng);
+	printf("Half of tooth angle at pich circle : \t%f\t%f\n", txg * 180 / PI, tng * 180 / PI);
 
 	printf("Chordal Thickness - Worm : \t\t%f\t%f\n", sjwx, sjwn);
 	printf("Chordal Thickness - Gear : \t\t%f\t%f\n", sjgx, sjgn);
