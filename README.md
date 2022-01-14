@@ -168,5 +168,45 @@ Tooth Thickness at Standard pitch Diameter:     4.712400
 Min No of Teeth for Undercutting:       7.539621
 ```
 
+## Helical Gear Calculations
+gcc -o helix helix.c -lm
+```
+Usage: ./helix -mn 3.000000 -an 0.349067 -zp 12.000000 -zg 60.000000 -xnp 0.098090 -xng 0.000000
+        -mn     Module
+        -an     Pressure Angle
+        -zp     Number of teeth-Pinion
+        -zg     Number of teeth-Gear
+        -xnp    Coefficient of Profile Shift-Pinion
+        -xng    Coefficient of Profile Shift-Gear
+
+
+--------------------------                       PINION          GEAR 
+Normal Module:                          3.000000
+Normal Pressure Angle:                  20.000000
+Helix Angle:                            30.000000
+Number of teeth:                        12.000000       60.000000     
+Normal Coefficient of Profile Shift:    0.098090        0.000000      
+Involute function:                      0.023405
+Working Pressure Angle:                 23.062500
+Center Distance Increment Factor:       0.081906
+Center Distance:                        124.953463
+Pitch Diameter:                         41.569249       207.846244    
+Base Diameter:                          38.322299       191.611495    
+Working Pitch Diameter:                 41.651154       208.255772    
+Addendum:                               3.245717        2.951447      
+Whole Depth:                            6.701447
+Dedendum:                               3.455730        3.750000
+Working Depth:                          6.000000
+Outside Diameter:                       48.060683       213.749138
+Root Diameter:                  34.657789       200.346244
+Top Clearance:                          0.750000
+Circular Pitch:                         9.424800
+Pitch Prependicular to Tooth:           8.671548
+Base Pitch:                             8.671548
+Tooth Thickness at Standard pitch Diameter:     4.712400
+Contact Ratio:                          -5.006620
+Min No of Teeth for Undercutting:       13.032967
+```
+
 ## Support Us
 BTC    bc1qy8zfvyymhtfh7t2ykuaf3ev6h3nq3r2zn64jv7
