@@ -12,68 +12,68 @@ Gear Formula - Gear Worm
 ## Calculations of Worm Gears
 gcc -o worm worm.c -lm 
 ```
-Usage: ./worm -zw 2.000000 -zg 30.000000 -mx 3.000000 -an 0.349067 -dw 44.000000
+Usage: ./worm -zw 2.000000 -zg 30.000000 -mx 2.540000 -an 0.349067 -dw 20.000000
         -zw     No. of Threads
-        -zg     No. of Teeth
-        -mx     Module
+        -zg     No. of Teeth  
+        -mx     Module        
         -an     Normal Pressure Angle
         -dw     Diameter of Worm
-        -xg     Coefficient of Profile Shift     
+        -xg     Coefficient of Profile Shift
         -clr    Coefficient of Clearance
-        -ft     Load (kgf)
-        -n      Revolution Per Minuts (rpm)      
+        -ft     Tangential force (kgf)
+        -n      Revolution Per Minuts (rpm)
         -zm     Lubrication Factor Zm
         -zl     Lubricant Factor, ZL
-        -zr     Surface Roughness Factor, ZR     
+        -zr     Surface Roughness Factor, ZR
         -kc     Contact Factor, Kc
         -ks     Starting Factor, Ks
         -kh     Time Factor, Kh
         -bzf    Basic Zone Factor
-        -sc     Allowable Stress Factor, Sc lim  
+        -sc     Allowable Stress Factor, Sc lim
 
 
-Kv 0.508249 Zm 1.000000 Kn 0.358904 Z 1.564000   
-Diameter Factor :                       14.666667
-Lead-Worm:                              18.849600
-Lead Angle :                            7.765148
-Length of worm with teeth :             48.066480
-Working blank width of worm gear :      23.748684
+Kv 0.601237 Zm 1.000000 Kn 0.358904 Z 1.564000
+Diameter Factor :                       7.874016
+Lead-Worm:                              15.959328
+Lead Angle :                            14.251708
+Length of worm with teeth :             40.696286
+Working blank width of worm gear :      15.132957
 Coefficient of Clearance :              0.250000
 Coefficient of Profile Shift :          0.000000
 
                                          Axial           Normal          Radial
  ----------------------------------------
-Module:                                  3.000000       2.972491        22.000000
-Pressure Angle:                          20.170236      20.000000       69.633928
-Pitch:                                   9.424800       9.338376        69.115200
-Pitch Diameter-Worm :                    44.000000      44.000000       44.000000
-Pitch Diameter-Gear :                    90.000000      90.000000       90.000000
-Addendum-Worm :                          3.000000       2.972491        22.000000
-Addendum-Gear :                          3.000000       2.972491        22.000000
-Whole Depth :                            6.750000       6.688104        49.500000
-Working Depth :                          6.000000       5.944981        44.000000
-Top Clearance :                          0.750000       0.743123        5.500000
-Outside Diameter-Worm :                  50.000000      49.944981       88.000000
-Outside Diameter-Gear :                  99.000000      98.917472       156.000000
-Throat Diameter :                        50.000000      49.944981       88.000000
-Throat Surface Radius :                  19.000000      19.027509
-Root Diameter-Worm :                     36.500000      36.568774
-Root Diameter-Gear :                     36.500000      36.568774
-Center Distance:                         67.000000      67.000000       67.000000
+Module:                                  2.540000       2.461828        10.000000
+Pressure Angle:                          20.582547      20.000000       55.926242
+Pitch:                                   7.979664       7.734077        31.416000
+Pitch Diameter-Worm :                    20.000000      20.000000       20.000000
+Pitch Diameter-Gear :                    76.200000      76.200000       76.200000
+Addendum-Worm :                          2.540000       2.461828        10.000000
+Addendum-Gear :                          2.540000       2.461828        10.000000
+Whole Depth :                            5.715000       5.539112        22.500000
+Working Depth :                          5.080000       4.923655        20.000000
+Top Clearance :                          0.635000       0.615457        2.500000
+Outside Diameter-Worm :                  25.080000      24.923655       40.000000
+Outside Diameter-Gear :                  83.820000      83.585483       106.200000
+Throat Diameter :                        81.280000      24.923655       40.000000
+Throat Surface Radius :                  7.460000       7.538172
+Root Diameter-Worm :                     13.650000      13.845431
+Root Diameter-Gear :                     69.850000      13.845431
+Center Distance:                         48.100000      48.100000       48.100000
 
 ----------------------- Thickness --------------------
-Circular Tooth Thickness-Worm :         4.712400        4.669188
-Circular Tooth Thickness-Gear :         4.712400        4.669188
-No of Teeth in an equivalent spur gear: 30.840655       30.840655
-Half of tooth angle at pich circle :    2.918226        2.918226
-Chordal Thickness - Worm :              4.669188        4.626372
-Chordal Thickness - Gear :              4.667170        4.624372
-Chordal Addendum - Worm :               3.002303        2.974752
-Chordal Addendum - Gear :               3.059441        3.031386
+Circular Tooth Thickness-Worm :         3.989832        3.867039
+Circular Tooth Thickness-Gear :         3.989832        3.867039
+No of Teeth in an equivalent spur gear: 32.949554       32.949554
+Half of tooth angle at pich circle :    2.731448        2.731448
+Chordal Thickness - Worm :              3.867039        3.748024
+Chordal Thickness - Gear :              3.865574        3.746605
+Chordal Addendum - Worm :               2.552060        2.473156
+Chordal Addendum - Gear :               2.586079        2.506489
 
 ----------------------- Force --------------------
-Nominal tangential force on worm gear's pitch circle (kgf) 45.000000 < 80.157684
-Nominal torque of worm gear (kg * m) 2.025000 < 3.607096
+Nominal tangential force on worm gear's pitch circle (kgf) 0.450000 < 70.274341
+Nominal torque of worm gear (kg * m) 0.017145 < 2.677452
 ```
 
 ## Calculations of Spur Gears
