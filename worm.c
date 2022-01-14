@@ -26,12 +26,12 @@ double zw = 2;
 // number of teeth in worm gear
 double zg = 30;
 // module
-double mx = 3;
+double mx = 2.54;
 // normal pressure angle
 double an = 20 * PI / 180;
 
 // Diameter of Worm
-double d = 44;
+double d = 20;
 
 // Coefficient of Profile Shift
 double xg = 0;
@@ -39,7 +39,7 @@ double xg = 0;
 // Coefficient of Clearance
 double cclr = 0.25;
 
-double Ft = 45;
+double Ft = 0.45;
 double n1 = 600; //rpm
 // Lubrication Factor Zm
 double Zm = 1;
@@ -75,7 +75,7 @@ int main(int argc, char *argv[])
 			printf("-dw \tDiameter of Worm\n");
 			printf("-xg \tCoefficient of Profile Shift\n");
 			printf("-clr \tCoefficient of Clearance\n");
-			printf("-ft \tLoad (kgf)\n");
+			printf("-ft \tTangential force (kgf)\n");
 			printf("-n \tRevolution Per Minuts (rpm)\n");
 			printf("-zm \tLubrication Factor Zm\n");
 			printf("-zl \tLubricant Factor, ZL\n");
@@ -218,7 +218,7 @@ int main(int argc, char *argv[])
 	printf("\t-dw \tDiameter of Worm\n");
 	printf("\t-xg \tCoefficient of Profile Shift\n");
 	printf("\t-clr \tCoefficient of Clearance\n");
-	printf("\t-ft \tLoad (kgf)\n");
+	printf("\t-ft \tTangential force (kgf)\n");
 	printf("\t-n \tRevolution Per Minuts (rpm)\n");
 	printf("\t-zm \tLubrication Factor Zm\n");
 	printf("\t-zl \tLubricant Factor, ZL\n");
@@ -304,7 +304,7 @@ int main(int argc, char *argv[])
 	// Outside Diameter Gear
 	double odgx = dg + (2 * adgx) + mx;
 	// Throat Diameter
-	double tdx = dw + (2 * adgx);
+	double tdx = dg + (2 * adgx);
 	// Throat Surface Radius
 	double trx = (dw / 2) - adwx;
 	// Root Diameter Worm
