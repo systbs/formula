@@ -85,6 +85,7 @@ int main(int argc, char *argv[])
 	double h = 2.25 * m;
 	double da = d + 2 * hag;
 	double df = da - 2 * h;
+	double mp = (sqrt(pow(da / 2, 2) - pow(df / 2, 2)) + ((har - x * m / sin(a))) - ((d / 2) * sin(a))) / (PI * m * cos(a));
 
 	printf("\n--------------------- \t\t\tSpur Gear\tRack\n");
 	printf("Module: \t\t\t\t%f\n", m);
@@ -101,4 +102,5 @@ int main(int argc, char *argv[])
 	printf("Whole Depth: \t\t\t\t%f\n", h);
 	printf("Outside Diameter: \t\t\t%f\n", da);
 	printf("Root Diameter: \t\t\t\t%f\n", df);
+	printf("Contact Ratio: \t\t\t\t%f\n", mp);
 }
