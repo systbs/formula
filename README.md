@@ -56,9 +56,9 @@ Circular Tooth Thickness-Gear :         4.712400        4.669188
 No of Teeth in an equivalent spur gear: 30.840655       30.840655
 Half of tooth angle at pich circle :    2.918226        2.918226
 Chordal Thickness - Worm :              4.669188        4.626372
-Chordal Thickness - Gear :              20.306968       20.120756
+Chordal Thickness - Gear :              4.667170        4.624372
 Chordal Addendum - Worm :               3.002303        2.974752
-Chordal Addendum - Gear :               93.534840       92.677142
+Chordal Addendum - Gear :               3.059441        3.031386
 ```
 
 ## Calculations of Spur Gears
