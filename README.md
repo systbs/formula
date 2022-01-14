@@ -118,7 +118,7 @@ Min No of Teeth for Undercutting:       10.349517
 ## Spur Gear & Rack
 gcc -o rack rack.c -lm
 ```
-Usage: ./rack -m 3.000000 -a 0.349067 -z 12.000000 -x 0.600000 -H 32.000000 -aw 0.349067
+Usage: ./rack -m 3.000000 -a 0.349067 -z 12.000000 -x 0.600000 -H 32.000000 -aw 0.349067 
         -m      Module
         -a      Pressure Angle
         -z      Number of teeth
@@ -129,7 +129,7 @@ Usage: ./rack -m 3.000000 -a 0.349067 -z 12.000000 -x 0.600000 -H 32.000000 -aw 
 
 ---------------------                   Spur Gear       Rack
 Module:                                 3.000000
-Pressure Angle:                         0.349067
+Pressure Angle:                         20.000000
 Number of Teeth:                        12.000000
 Coefficient of Profile Shift:           0.600000
 Height of Pitch Line:                   32.000000
