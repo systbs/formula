@@ -52,19 +52,9 @@ Root Diameter-Gear :                     36.500000      36.568774
 Center Distance:                         67.000000      67.000000       67.000000
 ```
 
-## Calculations of Spur Gears (Profile Shifting)
-```
+## Calculations of Spur Gears
 gcc -o spur spur.c -lm 
-Usage: ./spur -m 3.000000 -a 0.349067 -zp 12.000000 -zg 24.000000 -xp 0.600000 -xg 0.360000
-        -m      Module
-        -a      Pressure Angle
-        -zp     Number of teeth-Pinion
-        -zg     Number of teeth-Gear
-        -xp     Coefficient of Profile Shift-Pinion
-        -xg     Coefficient of Profile Shift-Gear
-        
- Output:
- 
+```
 Usage: ./spur -m 3.000000 -a 0.349067 -zp 12.000000 -zg 24.000000 -xp 0.600000 -xg 0.360000
         -m      Module
         -a      Pressure Angle
@@ -97,7 +87,7 @@ Circular Pitch:                         9.424800
 Pitch Prependicular to Tooth:           8.465308
 Base Pitch:                             8.465308
 Tooth Thickness at Standard pitch Diameter:     4.712400
-Contact Ratio:                          -2.372302
+Contact Ratio:                          1.226579
 Min No of Teeth for Undercutting:       10.349517
  ```
 
