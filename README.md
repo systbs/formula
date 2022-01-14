@@ -130,5 +130,43 @@ Outside Diameter:                       45.600000
 Root Diameter:                          32.100000
 ```
 
+## Internal/External Gear Calculations
+gcc -o external external.c -lm
+```
+Usage: ./external -m 3.000000 -a 0.349067 -ze 16.000000 -zi 24.000000 -xe 0.000000 -xi 0.500000
+        -m      Module
+        -a      Pressure Angle
+        -ze     Number of teeth-External
+        -zi     Number of teeth-Internal
+        -xe     Coefficient of Profile Shift-External
+        -xi     Coefficient of Profile Shift-Internal
+
+
+--------------------------               External        Internal
+Module:                                 3.000000
+Number of teeth:                        16.000000       24.000000
+Pressure Angle:                         20.000000
+Coefficient of Profile Shift:           0.000000        0.500000
+Involute function:                      0.024004
+Working Pressure Angle:                 23.000000
+Center Distance Increment Factor:       0.416899
+Center Distance:                        61.250696
+Pitch Diameter:                         48.000000       72.000000
+Base Diameter:                          45.105232       67.657849
+Working Pitch Diameter:                 49.000557       73.500835
+Addendum:                               4.250696        2.750696
+Whole Depth:                            6.500696
+Dedendum:                               2.250000        3.750000
+Working Depth:                          6.000000
+Outside Diameter:                       56.501392       66.498608
+Root Diameter:                          43.500000       79.500000
+Top Clearance:                          0.750000
+Circular Pitch:                         9.424800
+Pitch Prependicular to Tooth:           8.675571
+Base Pitch:                             8.675571
+Tooth Thickness at Standard pitch Diameter:     4.712400
+Min No of Teeth for Undercutting:       13.100023
+```
+
 ## Support Us
 BTC    bc1qy8zfvyymhtfh7t2ykuaf3ev6h3nq3r2zn64jv7
