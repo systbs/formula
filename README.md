@@ -18,10 +18,9 @@ Usage: ./worm -zw 2.000000 -zg 30.000000 -mx 3.000000 -an 0.349067 -dw 44.000000
         -mx     Module
         -an     Normal Pressure Angle
         -dw     Diameter of Worm
-        -cps    Coefficient of Profile Shift
+        -xg     Coefficient of Profile Shift
         -clr    Coefficient of Clearance
-        
-Output:
+
 
 Diameter Factor :                       14.666667
 Lead-Worm:                              18.849600
@@ -50,6 +49,16 @@ Throat Surface Radius :                  19.000000      19.027509
 Root Diameter-Worm :                     36.500000      36.568774
 Root Diameter-Gear :                     36.500000      36.568774
 Center Distance:                         67.000000      67.000000       67.000000
+
+----------------------- Thickness --------------------
+Circular Tooth Thickness-Worm :         4.712400        4.669188
+Circular Tooth Thickness-Gear :         4.712400        4.669188
+No of Teeth in an equivalent spur gear: 30.840655       30.840655
+Half of tooth angle at pich circle :    2.918226        2.918226
+Chordal Thickness - Worm :              4.669188        4.626372
+Chordal Thickness - Gear :              20.306968       20.120756
+Chordal Addendum - Worm :               3.002303        2.974752
+Chordal Addendum - Gear :               93.534840       92.677142
 ```
 
 ## Calculations of Spur Gears
